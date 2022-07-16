@@ -16,6 +16,9 @@ class ViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
+		// Nav bar
+		navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(promptForAnswer))
+		
 		// get the words from file
 		// use if let to check if empty dont do (optional)
 		if let startWordsURL = Bundle.main.url(forResource: "start", withExtension: "txt") {
@@ -41,6 +44,25 @@ class ViewController: UITableViewController {
 		
 	}
 	
+	//selector function when navbar add btn is pressed
+	@objc func promptForAnwer() {
+		let ac = UIAlertController(title: "Enter Answer", message: nil, preferredStyle: .alert)
+		ac.addTextField() //add text box to type ans
+		
+		//closure
+		let submitAction = UIAlertAction(title: "Submit", style: .default){
+			//parameters to use in closure
+			[weak self, weak ac] _ in // _ no alter name
+			guard let answer = ac?.textFields?[0].text else{ return } //get answer from textbox
+			self.submit(answer)
+		
+		}
+		ac.addAction(submitAction)
+		present(ac, animated: true)
+	}
+	
+	func submit(_ answer: String)
+	
 // MARK: table properties override
 	
 	override func numberOfSections(in tableView: UITableView) -> Int {
@@ -53,6 +75,8 @@ class ViewController: UITableViewController {
 		cell.textLabel?.text = usedWords[indexPath.row]
 		return cell
 	}
+	
+
 	
 
 }

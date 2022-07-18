@@ -7,6 +7,24 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zat-RV-1GF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xyT-Xg-yhB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z6y-7J-9A7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vi9-V4-qrJ" kind="relationship" relationship="rootViewController" id="c91-lC-PWv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OAp-zR-dTH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-126.08695652173914" y="90.401785714285708"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="vI7-VJ-Trg">
             <objects>
@@ -44,24 +62,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FYH-fy-AC0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="784.05797101449286" y="90.401785714285708"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="zat-RV-1GF">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xyT-Xg-yhB" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z6y-7J-9A7">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="vi9-V4-qrJ" kind="relationship" relationship="rootViewController" id="c91-lC-PWv"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OAp-zR-dTH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-126.08695652173914" y="90.401785714285708"/>
         </scene>
     </scenes>
     <resources>

@@ -9,11 +9,28 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+	
+	var window: UIWindow?
 
-
-
+//	when app is finished loading
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-		// Override point for customization after application launch.
+		
+		//In the Single View App template, the root view controller is the ViewController, but we embedded ours inside a navigation controller, then embedded that inside a tab bar controller. So, for us the root view controller is a UITabBarController.
+		if let tabBarController = window?.rootViewController as? UITabBarController{
+			
+			//We need to create a new ViewController by hand, which first means getting a reference to our Main.storyboard file. This is done using the UIStoryboard class, as shown. You don't need to provide a bundle, because nil means "use my current app bundle."
+			let storyboard = UIStoryboard(name: "Main", bundle: nil)
+			
+			//We create our view controller using the instantiateViewController() method, passing in the storyboard ID of the view controller we want. Earlier we set our navigation controller to have the storyboard ID of "NavController", so we pass that in.
+			let vc = storyboard.instantiateViewController(withIdentifier: "NavController")
+			
+			// We create a UITabBarItem object for the new view controller, giving it the "Top Rated" icon and the tag 1.
+			vc.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 1)
+			
+			// We add the new view controller to our tab bar controller's viewControllers array, which will cause it to appear in the tab bar.
+			tabBarController.viewControllers?.append(vc)
+		}
+		
 		return true
 	}
 

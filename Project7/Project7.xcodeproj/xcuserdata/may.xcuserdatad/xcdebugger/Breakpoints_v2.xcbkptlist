@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8E803A2F-98E6-4AF9-A5C4-79A813AF7F94"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA1437B1-8E37-4E40-8C04-B7C667B1A576"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project7/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "EA1437B1-8E37-4E40-8C04-B7C667B1A576 - d5bdfc170e1b9290"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Project7.ViewController.petitions.getter : Swift.Array&lt;Project7.Petition&gt;"
+                  moduleName = "Project7"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/may/Documents/Code/xcode%20swift/hackingwswift/Projects/Project7/Project7/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  uuid = "EA1437B1-8E37-4E40-8C04-B7C667B1A576 - 920fd9bd8d80729c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Project7.ViewController.petitions.setter : Swift.Array&lt;Project7.Petition&gt;"
+                  moduleName = "Project7"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/may/Documents/Code/xcode%20swift/hackingwswift/Projects/Project7/Project7/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "EA1437B1-8E37-4E40-8C04-B7C667B1A576 - 8608cf1ad7a40aed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Project7.ViewController.petitions.modify : Swift.Array&lt;Project7.Petition&gt;"
+                  moduleName = "Project7"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/may/Documents/Code/xcode%20swift/hackingwswift/Projects/Project7/Project7/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "EA1437B1-8E37-4E40-8C04-B7C667B1A576 - 214da587982ae480"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Project7.ViewController.petitions.modify : Swift.Array&lt;Project7.Petition&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Project7"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/may/Documents/Code/xcode%20swift/hackingwswift/Projects/Project7/Project7/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "EA1437B1-8E37-4E40-8C04-B7C667B1A576 - f26afb91cafd2a44"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Project7.ViewController.init(style: __C.UITableViewStyle) -&gt; Project7.ViewController"
+                  moduleName = "Project7"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/may/Documents/Code/xcode%20swift/hackingwswift/Projects/Project7/Project7/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "EA1437B1-8E37-4E40-8C04-B7C667B1A576 - 236e2629258fe988"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Project7.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Project7.ViewController"
+                  moduleName = "Project7"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/may/Documents/Code/xcode%20swift/hackingwswift/Projects/Project7/Project7/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "EA1437B1-8E37-4E40-8C04-B7C667B1A576 - 7aaded45b7100e1e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Project7.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Project7.ViewController&gt;"
+                  moduleName = "Project7"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/may/Documents/Code/xcode%20swift/hackingwswift/Projects/Project7/Project7/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "69">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

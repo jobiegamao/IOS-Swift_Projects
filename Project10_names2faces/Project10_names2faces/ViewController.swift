@@ -36,11 +36,11 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
 												self.openCamera(picker: picker)}
 									 ))
 		
-		alert.addAction(UIAlertAction(title: "Select Photo", style: .default, handler: { (UIImagePickerController) in
+		alert.addAction(UIAlertAction(title: "Select Photo", style: .default, handler: { (_) in
 			self.present(picker, animated: true)
 		}))
 		
-		alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel))
+		alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
 		
 		present(alert, animated: true)
 		
@@ -85,7 +85,8 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
 		cell.imageView.layer.borderColor = UIColor(white: 0, alpha: 0.3).cgColor // black + .3 of white == gray
 		cell.imageView.layer.borderWidth = 2
 		cell.imageView.layer.cornerRadius = 3
-		
+		cell.imageView.contentMode = .scaleToFill
+
 		//transform cell size
 		cell.layer.cornerRadius = 7
 		
@@ -134,47 +135,44 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
 		let ac = UIAlertController(title: "Choose Option", message:nil, preferredStyle: .alert)
 		
 		// RENAME HANDLER INSIDE
-		ac.addAction(UIAlertAction(title:"Rename", style: .default, handler: { [weak person] _ in
-				let ac_rename = UIAlertController(title: "Rename person", message: nil, preferredStyle: .alert)
-				
-				ac_rename.addTextField()
+		ac.addAction(
+			UIAlertAction(title:"Rename", style: .default,
+						  handler: { (_) in
+							let ac_rename = UIAlertController(title: "Rename person", message: nil, preferredStyle: .alert)
+							
+							ac_rename.addTextField()
 
-				ac_rename.addAction(UIAlertAction(title: "OK", style: .default) { [weak self, weak ac_rename] _ in
-					guard let newName = ac_rename?.textFields?[0].text else { return }
-					person?.name = newName
+							ac_rename.addAction(UIAlertAction(title: "OK", style: .default) { [weak self, weak ac_rename] _ in
+								guard let newName = ac_rename?.textFields?[0].text else { return }
+								person.name = newName
 
-					self?.collectionView.reloadData()
-				})
-				
-				ac_rename.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+								self?.collectionView.reloadData()
+							})
+							
+							ac_rename.addAction(UIAlertAction(title: "Cancel", style: .cancel))
 
-				self.present(ac_rename, animated: true)
-				
-			} ))
+							self.present(ac_rename, animated: true)
+							
+						} ))
 		
 		// DELETE HANDLER AS OUTSIDE FUNCTION
-		ac.addAction(UIAlertAction(title:"Delete", style: .destructive, handler: deletePerson(person: person)))
+		ac.addAction(UIAlertAction(title:"Delete", style: .destructive, handler: { _ in self.deletePerson(person: person)}))
 		
 		ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
 		present(ac, animated: true)
 	}
 
 	
-	
-	// AS THIS IS AN ACTION HANDLER SYNTAX IS:
-	func deletePerson(person: Person) -> (_:UIAlertAction) -> () {
-		return { [self] _ in
-			if let person_index = people.firstIndex(of: person.self){
-				people.remove(at: person_index)
-				self.collectionView.reloadData()
-			}
-			
+	func deletePerson(person: Person) {
+		if let person_index = people.firstIndex(of: person.self){
+			people.remove(at: person_index)
+			self.collectionView.reloadData()
 		}
 	  
 	}
 	
 	
-//	SYNTAX FOR ALERT ACTION HANDLER FUNCTION
+//	SYNTAX FOR ALERT ACTION HANDLER FUNCTION,  can also add _ in part in handler
 	func renamePerson() -> (_:UIAlertAction) -> () {
 		return { _ in
 			//

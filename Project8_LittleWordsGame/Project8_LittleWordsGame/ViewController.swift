@@ -68,12 +68,22 @@ class ViewController: UIViewController {
 		
 		let submitBtn = UIButton(type: .system)
 		submitBtn.translatesAutoresizingMaskIntoConstraints = false
+		submitBtn.contentEdgeInsets = UIEdgeInsets(top: 0.0, left: 20, bottom: 0.0, right: 20)
+		submitBtn.backgroundColor = .clear
+		submitBtn.layer.cornerRadius = 5
+		submitBtn.layer.borderWidth = 1
+		submitBtn.layer.borderColor = UIColor.gray.cgColor
 		submitBtn.setTitle("SUBMIT", for: .normal)
 		view.addSubview(submitBtn)
 		submitBtn.addTarget(self, action: #selector(submitTapped), for: .touchUpInside)
 
 		let clearBtn = UIButton(type: .system)
 		clearBtn.translatesAutoresizingMaskIntoConstraints = false
+		clearBtn.contentEdgeInsets = UIEdgeInsets(top: 0.0, left: 20, bottom: 0.0, right: 20)
+		clearBtn.backgroundColor = .clear
+		clearBtn.layer.cornerRadius = 5
+		clearBtn.layer.borderWidth = 1
+		clearBtn.layer.borderColor = UIColor.gray.cgColor
 		clearBtn.setTitle("CLEAR", for: .normal)
 		view.addSubview(clearBtn)
 		clearBtn.addTarget(self, action: #selector(clearTapped), for: .touchUpInside)

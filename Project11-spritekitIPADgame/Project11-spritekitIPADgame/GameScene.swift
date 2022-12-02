@@ -44,9 +44,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 		didSet {
 			if editMode {
 				editBtn.text = "Done"
-				rightBtn.text = "Clear"
+				editBtn.fontColor = .green
+				rightBtn.text = "Reset"
 			} else {
 				editBtn.text = "Edit"
+				editBtn.fontColor = .yellow
 				rightBtn.text = "Add Obstacles"
 			}
 		}
@@ -64,6 +66,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 		
 		editBtn = SKLabelNode(fontNamed: "Chalkduster")
 		editBtn.text = "Edit"
+		editBtn.fontColor = .yellow
 		editBtn.position = CGPoint(x: 80, y: 700)
 		editBtn.horizontalAlignmentMode = .left
 		addChild(editBtn)
@@ -88,6 +91,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 		
 		rightBtn = SKLabelNode(fontNamed: "Chalkduster")
 		rightBtn.text = "Add Obstacles"
+		rightBtn.fontColor = .yellow
 		rightBtn.horizontalAlignmentMode = .left
 		rightBtn.position = CGPoint(x: scoreLabel.position.x, y: 660)
 		addChild(rightBtn)
@@ -234,18 +238,22 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 		slotGlow.run(spinForever)
 	}
 	
+	var plusBall = false
 	func collisionBetween(ball: SKNode, object: SKNode){
 		if object.name == "goodSlot" {
 			destroy(node: ball)
-			if ballsCount <= 5  && object.name == "rectangle"{
+			if ballsCount <= 5  && plusBall {
 				ballsCount += 1
+				plusBall = false
 			}
 		
 		} else if object.name == "badSlot" {
 			destroy(node: ball)
+			plusBall = false
 		}
 		
 		if object.name == "rectangle" {
+			self.plusBall = true
 			score += 1
 			destroy(node: object)
 			

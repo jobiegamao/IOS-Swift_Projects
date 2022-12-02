@@ -7,32 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C57ACA029376BAE00455E21 /* spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C57AC9F29376BAE00455E21 /* spark.sks */; };
-		6C57ACA229376CB100455E21 /* FireParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C57ACA129376CB100455E21 /* FireParticles.sks */; };
-		6C9512A82934A575005E80C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9512A72934A575005E80C0 /* AppDelegate.swift */; };
-		6C9512AA2934A575005E80C0 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C9512A92934A575005E80C0 /* GameScene.sks */; };
-		6C9512AE2934A575005E80C0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9512AD2934A575005E80C0 /* GameScene.swift */; };
-		6C9512B02934A575005E80C0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9512AF2934A575005E80C0 /* GameViewController.swift */; };
-		6C9512B32934A575005E80C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9512B12934A575005E80C0 /* Main.storyboard */; };
-		6C9512B52934A577005E80C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9512B42934A577005E80C0 /* Assets.xcassets */; };
-		6C9512B82934A577005E80C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9512B62934A577005E80C0 /* LaunchScreen.storyboard */; };
+		6C06234E292F605C00A018A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C06234D292F605C00A018A4 /* AppDelegate.swift */; };
+		6C062350292F605C00A018A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C06234F292F605C00A018A4 /* SceneDelegate.swift */; };
+		6C062352292F605C00A018A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C062351292F605C00A018A4 /* ViewController.swift */; };
+		6C062355292F605C00A018A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C062353292F605C00A018A4 /* Main.storyboard */; };
+		6C062357292F605E00A018A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C062356292F605E00A018A4 /* Assets.xcassets */; };
+		6C06235A292F605E00A018A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C062358292F605E00A018A4 /* LaunchScreen.storyboard */; };
+		6C062362292F62BB00A018A4 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C062361292F62BB00A018A4 /* PersonCell.swift */; };
+		6C062364292F842A00A018A4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C062363292F842A00A018A4 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6C57AC9F29376BAE00455E21 /* spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = spark.sks; sourceTree = "<group>"; };
-		6C57ACA129376CB100455E21 /* FireParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireParticles.sks; sourceTree = "<group>"; };
-		6C9512A42934A575005E80C0 /* Project11-spritekitIPADgame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project11-spritekitIPADgame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C9512A72934A575005E80C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C9512A92934A575005E80C0 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		6C9512AD2934A575005E80C0 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		6C9512AF2934A575005E80C0 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		6C9512B22934A575005E80C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6C9512B42934A577005E80C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6C9512B72934A577005E80C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C06234A292F605C00A018A4 /* Project10_names2faces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project10_names2faces.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C06234D292F605C00A018A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C06234F292F605C00A018A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6C062351292F605C00A018A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C062354292F605C00A018A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C062356292F605E00A018A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C062359292F605E00A018A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C06235B292F605E00A018A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C062361292F62BB00A018A4 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		6C062363292F842A00A018A4 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6C9512A12934A574005E80C0 /* Frameworks */ = {
+		6C062347292F605C00A018A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,74 +41,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6C95129B2934A574005E80C0 = {
+		6C062341292F605C00A018A4 = {
 			isa = PBXGroup;
 			children = (
-				6C9512A62934A575005E80C0 /* Project11-spritekitIPADgame */,
-				6C9512A52934A575005E80C0 /* Products */,
+				6C06234C292F605C00A018A4 /* Project10_names2faces */,
+				6C06234B292F605C00A018A4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6C9512A52934A575005E80C0 /* Products */ = {
+		6C06234B292F605C00A018A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6C9512A42934A575005E80C0 /* Project11-spritekitIPADgame.app */,
+				6C06234A292F605C00A018A4 /* Project10_names2faces.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6C9512A62934A575005E80C0 /* Project11-spritekitIPADgame */ = {
+		6C06234C292F605C00A018A4 /* Project10_names2faces */ = {
 			isa = PBXGroup;
 			children = (
-				6C9512A72934A575005E80C0 /* AppDelegate.swift */,
-				6C9512A92934A575005E80C0 /* GameScene.sks */,
-				6C9512AD2934A575005E80C0 /* GameScene.swift */,
-				6C57AC9F29376BAE00455E21 /* spark.sks */,
-				6C57ACA129376CB100455E21 /* FireParticles.sks */,
-				6C9512AF2934A575005E80C0 /* GameViewController.swift */,
-				6C9512B12934A575005E80C0 /* Main.storyboard */,
-				6C9512B42934A577005E80C0 /* Assets.xcassets */,
-				6C9512B62934A577005E80C0 /* LaunchScreen.storyboard */,
+				6C06234D292F605C00A018A4 /* AppDelegate.swift */,
+				6C06234F292F605C00A018A4 /* SceneDelegate.swift */,
+				6C062351292F605C00A018A4 /* ViewController.swift */,
+				6C062353292F605C00A018A4 /* Main.storyboard */,
+				6C062363292F842A00A018A4 /* Person.swift */,
+				6C062361292F62BB00A018A4 /* PersonCell.swift */,
+				6C062356292F605E00A018A4 /* Assets.xcassets */,
+				6C062358292F605E00A018A4 /* LaunchScreen.storyboard */,
+				6C06235B292F605E00A018A4 /* Info.plist */,
 			);
-			path = "Project11-spritekitIPADgame";
+			path = Project10_names2faces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6C9512A32934A574005E80C0 /* Project11-spritekitIPADgame */ = {
+		6C062349292F605C00A018A4 /* Project10_names2faces */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C9512BB2934A577005E80C0 /* Build configuration list for PBXNativeTarget "Project11-spritekitIPADgame" */;
+			buildConfigurationList = 6C06235E292F605E00A018A4 /* Build configuration list for PBXNativeTarget "Project10_names2faces" */;
 			buildPhases = (
-				6C9512A02934A574005E80C0 /* Sources */,
-				6C9512A12934A574005E80C0 /* Frameworks */,
-				6C9512A22934A574005E80C0 /* Resources */,
+				6C062346292F605C00A018A4 /* Sources */,
+				6C062347292F605C00A018A4 /* Frameworks */,
+				6C062348292F605C00A018A4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Project11-spritekitIPADgame";
-			productName = "Project11-spritekitIPADgame";
-			productReference = 6C9512A42934A575005E80C0 /* Project11-spritekitIPADgame.app */;
+			name = Project10_names2faces;
+			productName = Project10_names2faces;
+			productReference = 6C06234A292F605C00A018A4 /* Project10_names2faces.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6C95129C2934A574005E80C0 /* Project object */ = {
+		6C062342292F605C00A018A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					6C9512A32934A574005E80C0 = {
-						CreatedOnToolsVersion = 14.1;
+					6C062349292F605C00A018A4 = {
+						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 6C95129F2934A574005E80C0 /* Build configuration list for PBXProject "Project11-spritekitIPADgame" */;
+			buildConfigurationList = 6C062345292F605C00A018A4 /* Build configuration list for PBXProject "Project10_names2faces" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,58 +116,57 @@
 				en,
 				Base,
 			);
-			mainGroup = 6C95129B2934A574005E80C0;
-			productRefGroup = 6C9512A52934A575005E80C0 /* Products */;
+			mainGroup = 6C062341292F605C00A018A4;
+			productRefGroup = 6C06234B292F605C00A018A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6C9512A32934A574005E80C0 /* Project11-spritekitIPADgame */,
+				6C062349292F605C00A018A4 /* Project10_names2faces */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6C9512A22934A574005E80C0 /* Resources */ = {
+		6C062348292F605C00A018A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C9512B32934A575005E80C0 /* Main.storyboard in Resources */,
-				6C57ACA029376BAE00455E21 /* spark.sks in Resources */,
-				6C9512AA2934A575005E80C0 /* GameScene.sks in Resources */,
-				6C57ACA229376CB100455E21 /* FireParticles.sks in Resources */,
-				6C9512B52934A577005E80C0 /* Assets.xcassets in Resources */,
-				6C9512B82934A577005E80C0 /* LaunchScreen.storyboard in Resources */,
+				6C06235A292F605E00A018A4 /* LaunchScreen.storyboard in Resources */,
+				6C062357292F605E00A018A4 /* Assets.xcassets in Resources */,
+				6C062355292F605C00A018A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6C9512A02934A574005E80C0 /* Sources */ = {
+		6C062346292F605C00A018A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C9512AE2934A575005E80C0 /* GameScene.swift in Sources */,
-				6C9512B02934A575005E80C0 /* GameViewController.swift in Sources */,
-				6C9512A82934A575005E80C0 /* AppDelegate.swift in Sources */,
+				6C062364292F842A00A018A4 /* Person.swift in Sources */,
+				6C062352292F605C00A018A4 /* ViewController.swift in Sources */,
+				6C06234E292F605C00A018A4 /* AppDelegate.swift in Sources */,
+				6C062362292F62BB00A018A4 /* PersonCell.swift in Sources */,
+				6C062350292F605C00A018A4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6C9512B12934A575005E80C0 /* Main.storyboard */ = {
+		6C062353292F605C00A018A4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6C9512B22934A575005E80C0 /* Base */,
+				6C062354292F605C00A018A4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		6C9512B62934A577005E80C0 /* LaunchScreen.storyboard */ = {
+		6C062358292F605E00A018A4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6C9512B72934A577005E80C0 /* Base */,
+				6C062359292F605E00A018A4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -176,7 +174,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6C9512B92934A577005E80C0 /* Debug */ = {
+		6C06235C292F605E00A018A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -236,7 +234,7 @@
 			};
 			name = Debug;
 		};
-		6C9512BA2934A577005E80C0 /* Release */ = {
+		6C06235D292F605E00A018A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -290,84 +288,82 @@
 			};
 			name = Release;
 		};
-		6C9512BC2934A577005E80C0 /* Debug */ = {
+		6C06235F292F605E00A018A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S9R6HFZ747;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_FILE = Project10_names2faces/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jobie.Project11-spritekitIPADgame";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jobie.Project10-names2faces";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		6C9512BD2934A577005E80C0 /* Release */ = {
+		6C062360292F605E00A018A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S9R6HFZ747;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_FILE = Project10_names2faces/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jobie.Project11-spritekitIPADgame";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jobie.Project10-names2faces";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6C95129F2934A574005E80C0 /* Build configuration list for PBXProject "Project11-spritekitIPADgame" */ = {
+		6C062345292F605C00A018A4 /* Build configuration list for PBXProject "Project10_names2faces" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6C9512B92934A577005E80C0 /* Debug */,
-				6C9512BA2934A577005E80C0 /* Release */,
+				6C06235C292F605E00A018A4 /* Debug */,
+				6C06235D292F605E00A018A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C9512BB2934A577005E80C0 /* Build configuration list for PBXNativeTarget "Project11-spritekitIPADgame" */ = {
+		6C06235E292F605E00A018A4 /* Build configuration list for PBXNativeTarget "Project10_names2faces" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6C9512BC2934A577005E80C0 /* Debug */,
-				6C9512BD2934A577005E80C0 /* Release */,
+				6C06235F292F605E00A018A4 /* Debug */,
+				6C062360292F605E00A018A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6C95129C2934A574005E80C0 /* Project object */;
+	rootObject = 6C062342292F605C00A018A4 /* Project object */;
 }

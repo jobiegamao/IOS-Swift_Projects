@@ -16,6 +16,20 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
 		
 		navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewPerson))
 		
+		
+		// load saveddata by userdefeaults
+		let defaults = UserDefaults.standard
+
+		if let savedPeople = defaults.object(forKey: "people") as? Data {
+			let jsonDecoder = JSONDecoder()
+
+			do {
+				people = try jsonDecoder.decode([Person].self, from: savedPeople)
+			} catch {
+				print("Failed to load people")
+			}
+		}
+		
 	}
 	
 	@objc func addNewPerson(){
@@ -115,6 +129,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
 		// add person object
 		let person = Person(name: "Unknown", image: imageName)
 		people.append(person)
+		save()
 		collectionView.reloadData()
 
 		dismiss(animated: true)
@@ -145,7 +160,7 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
 							ac_rename.addAction(UIAlertAction(title: "OK", style: .default) { [weak self, weak ac_rename] _ in
 								guard let newName = ac_rename?.textFields?[0].text else { return }
 								person.name = newName
-
+								self?.save()
 								self?.collectionView.reloadData()
 							})
 							
@@ -166,16 +181,19 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
 	func deletePerson(person: Person) {
 		if let person_index = people.firstIndex(of: person.self){
 			people.remove(at: person_index)
+			save()
 			self.collectionView.reloadData()
 		}
 	  
 	}
 	
-	
-//	SYNTAX FOR ALERT ACTION HANDLER FUNCTION,  can also add _ in part in handler
-	func renamePerson() -> (_:UIAlertAction) -> () {
-		return { _ in
-			//
+	func save(){
+		let json = JSONEncoder()
+		if let savedData = try? json.encode(people){
+			let defaults = UserDefaults.standard
+			defaults.set(savedData, forKey: "people")
+		} else {
+			print("failed to save")
 		}
 	}
 	

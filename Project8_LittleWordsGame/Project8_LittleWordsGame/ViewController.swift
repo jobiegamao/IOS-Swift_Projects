@@ -167,10 +167,19 @@ class ViewController: UIViewController {
 	}
 	
 	@objc func letterTapped(_ sender: UIButton) {
+
 		guard let buttonTitle = sender.titleLabel?.text else { return } //It adds a safety check to read the title from the tapped button, or exit if it didn’t have one for some reason.
 		currentAnswer.text = currentAnswer.text?.appending(buttonTitle) //Appends that button title to the player’s current answer.
 		activatedButtons.append(sender) //Appends the button to the activatedButtons array
-		sender.isHidden = true //Hides the button that was tapped.
+		UIView.animate(withDuration: 0.3, delay: 0, options: [],
+			animations: {
+			sender.alpha = 0
+			
+		}){ // when animate is done, add closure what to do next
+				finished in
+				sender.isHidden = true
+				sender.alpha = 1
+			}
 	}
 
 	@objc func submitTapped(_ sender: UIButton) {
@@ -207,6 +216,7 @@ class ViewController: UIViewController {
 	@objc func clearTapped(_ sender: UIButton) {
 		currentAnswer.text = ""
 		
+
 		for btn in activatedButtons{
 			btn.isHidden = false
 		}

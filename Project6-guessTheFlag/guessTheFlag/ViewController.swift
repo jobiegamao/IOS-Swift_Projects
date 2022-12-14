@@ -47,7 +47,11 @@ class ViewController: UIViewController {
 	
 	
 	@IBAction func buttonTapped(_ sender: UIButton) {
-		//tag of btn in IB button view is the variable name
+
+		UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5) {
+			sender.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+		}
+		
 		
 		var title: String
 		
@@ -83,6 +87,7 @@ class ViewController: UIViewController {
 	   // action: UIAlertAction! = nil
 
 		present(ac, animated: true)
+		sender.transform = .identity
 	}
 	
 	func setup() {

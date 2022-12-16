@@ -43,6 +43,41 @@
             </objects>
             <point key="canvasLocation" x="1293.8931297709923" y="-215.49295774647888"/>
         </scene>
+        <!--Capital Web View Controller-->
+        <scene sceneID="wd8-Zt-wsL">
+            <objects>
+                <viewController storyboardIdentifier="WebView" id="4Iq-bR-Yb2" customClass="CapitalWebViewController" customModule="Project16_mapKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qgT-Jn-2Bk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3h-Rn-NSa">
+                                <rect key="frame" x="0.0" y="99" width="393" height="679"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zCE-5I-E2P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="M3h-Rn-NSa" firstAttribute="centerX" secondItem="qgT-Jn-2Bk" secondAttribute="centerX" id="89V-08-TKO"/>
+                            <constraint firstItem="M3h-Rn-NSa" firstAttribute="top" secondItem="zCE-5I-E2P" secondAttribute="top" constant="40" id="Jrs-yx-Eoy"/>
+                            <constraint firstItem="M3h-Rn-NSa" firstAttribute="leading" secondItem="zCE-5I-E2P" secondAttribute="leading" id="Krm-Z1-0dv"/>
+                            <constraint firstItem="zCE-5I-E2P" firstAttribute="bottom" secondItem="M3h-Rn-NSa" secondAttribute="bottom" constant="40" id="RdC-om-RDP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Br9-La-Qd0"/>
+                    <connections>
+                        <outlet property="webView" destination="M3h-Rn-NSa" id="gPt-sc-LOC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IeD-d8-94O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2295" y="-215"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="eWy-93-gUK">
             <objects>

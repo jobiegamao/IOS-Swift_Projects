@@ -14,6 +14,10 @@
 		6C6C36E9294C4B9B00A99F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C6C36E8294C4B9B00A99F51 /* Assets.xcassets */; };
 		6C6C36EC294C4B9B00A99F51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C6C36EA294C4B9B00A99F51 /* LaunchScreen.storyboard */; };
 		6C6C36F4294C507500A99F51 /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6C36F3294C507500A99F51 /* Capital.swift */; };
+		6C6C36F8294C7AD300A99F51 /* CapitalWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6C36F7294C7AD300A99F51 /* CapitalWebViewController.swift */; };
+		6C6C36FD294CA7FB00A99F51 /* Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.27.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6C36FA294CA7FB00A99F51 /* Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.27.png */; };
+		6C6C36FE294CA7FB00A99F51 /* Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.39.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6C36FB294CA7FB00A99F51 /* Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.39.png */; };
+		6C6C36FF294CA7FB00A99F51 /* Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.45.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C6C36FC294CA7FB00A99F51 /* Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.45.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		6C6C36EB294C4B9B00A99F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C6C36ED294C4B9B00A99F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C6C36F3294C507500A99F51 /* Capital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
+		6C6C36F7294C7AD300A99F51 /* CapitalWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalWebViewController.swift; sourceTree = "<group>"; };
+		6C6C36FA294CA7FB00A99F51 /* Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.27.png"; sourceTree = "<group>"; };
+		6C6C36FB294CA7FB00A99F51 /* Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.39.png"; sourceTree = "<group>"; };
+		6C6C36FC294CA7FB00A99F51 /* Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.45.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,7 @@
 		6C6C36D3294C4B9A00A99F51 = {
 			isa = PBXGroup;
 			children = (
+				6C6C36F9294CA7C100A99F51 /* screenshots */,
 				6C6C36DE294C4B9A00A99F51 /* Project16_mapKit */,
 				6C6C36DD294C4B9A00A99F51 /* Products */,
 			);
@@ -62,12 +71,23 @@
 				6C6C36E1294C4B9A00A99F51 /* SceneDelegate.swift */,
 				6C6C36E3294C4B9A00A99F51 /* ViewController.swift */,
 				6C6C36F3294C507500A99F51 /* Capital.swift */,
+				6C6C36F7294C7AD300A99F51 /* CapitalWebViewController.swift */,
 				6C6C36E5294C4B9A00A99F51 /* Main.storyboard */,
 				6C6C36E8294C4B9B00A99F51 /* Assets.xcassets */,
 				6C6C36EA294C4B9B00A99F51 /* LaunchScreen.storyboard */,
 				6C6C36ED294C4B9B00A99F51 /* Info.plist */,
 			);
 			path = Project16_mapKit;
+			sourceTree = "<group>";
+		};
+		6C6C36F9294CA7C100A99F51 /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				6C6C36FA294CA7FB00A99F51 /* Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.27.png */,
+				6C6C36FB294CA7FB00A99F51 /* Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.39.png */,
+				6C6C36FC294CA7FB00A99F51 /* Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.45.png */,
+			);
+			path = screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C6C36EC294C4B9B00A99F51 /* LaunchScreen.storyboard in Resources */,
+				6C6C36FE294CA7FB00A99F51 /* Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.39.png in Resources */,
+				6C6C36FF294CA7FB00A99F51 /* Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.45.png in Resources */,
 				6C6C36E9294C4B9B00A99F51 /* Assets.xcassets in Resources */,
+				6C6C36FD294CA7FB00A99F51 /* Simulator Screen Shot - iPhone 14 Pro - 2022-12-16 at 21.18.27.png in Resources */,
 				6C6C36E7294C4B9A00A99F51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +167,7 @@
 				6C6C36E4294C4B9A00A99F51 /* ViewController.swift in Sources */,
 				6C6C36E0294C4B9A00A99F51 /* AppDelegate.swift in Sources */,
 				6C6C36F4294C507500A99F51 /* Capital.swift in Sources */,
+				6C6C36F8294C7AD300A99F51 /* CapitalWebViewController.swift in Sources */,
 				6C6C36E2294C4B9A00A99F51 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

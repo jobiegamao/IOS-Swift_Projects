@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fUJ-kH-2eD">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fBT-Lt-Joe">
+            <objects>
+                <viewController id="UZv-mQ-61C" customClass="ViewController" customModule="Project16_mapKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qKa-H6-bom">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ls-xw-oUG">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                                <connections>
+                                    <outlet property="delegate" destination="UZv-mQ-61C" id="Eed-w1-LZd"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xUM-FQ-CUP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2Ls-xw-oUG" firstAttribute="centerX" secondItem="qKa-H6-bom" secondAttribute="centerX" id="0nV-Zi-FdT"/>
+                            <constraint firstItem="2Ls-xw-oUG" firstAttribute="leading" secondItem="xUM-FQ-CUP" secondAttribute="leading" id="Ijc-ZP-cbU"/>
+                            <constraint firstItem="2Ls-xw-oUG" firstAttribute="top" secondItem="xUM-FQ-CUP" secondAttribute="top" id="izU-cS-2yb"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="2Ls-xw-oUG" secondAttribute="bottom" constant="-34" id="jjg-hs-T8h"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jZb-pr-RQS"/>
+                    <connections>
+                        <outlet property="map" destination="2Ls-xw-oUG" id="n0p-le-2p0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6xZ-DJ-uTU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1293.8931297709923" y="-215.49295774647888"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eWy-93-gUK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fUJ-kH-2eD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J3X-Lo-hy3">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UZv-mQ-61C" kind="relationship" relationship="rootViewController" id="sud-vC-CGv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apc-ly-WN2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367.17557251908397" y="-215.49295774647888"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

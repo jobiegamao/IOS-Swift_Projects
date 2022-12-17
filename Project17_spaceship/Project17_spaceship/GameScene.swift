@@ -22,7 +22,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 		}
 	}
 	
-	let possibleEnemies = ["ball", "hammer", "tv"]
+	let possibleEnemies = ["ball", "hammer", "tv", "astronaut", "fire", "bomb", "planet", "satellite"]
 	var isGameOver = false
 	var gameTimer: Timer?
 	
@@ -157,6 +157,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 		guard let enemy = possibleEnemies.randomElement() else { return }
 
 		let sprite = SKSpriteNode(imageNamed: enemy)
+		sprite.setScale(CGFloat(Float.random(in: 0.5...1)))
 		sprite.position = CGPoint(x: 1200, y: Int.random(in: 0...Int(frame.maxY) - 90))
 		addChild(sprite)
 

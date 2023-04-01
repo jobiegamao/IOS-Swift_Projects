@@ -7,27 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C21582E29D80567006FB7BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21582D29D80567006FB7BA /* AppDelegate.swift */; };
-		6C21583029D80567006FB7BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21582F29D80567006FB7BA /* SceneDelegate.swift */; };
-		6C21583529D80567006FB7BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C21583329D80567006FB7BA /* Main.storyboard */; };
-		6C21583729D80568006FB7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C21583629D80568006FB7BA /* Assets.xcassets */; };
-		6C21583A29D80568006FB7BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C21583829D80568006FB7BA /* LaunchScreen.storyboard */; };
-		6C21584229D8062F006FB7BA /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21584129D8062F006FB7BA /* MainCollectionViewController.swift */; };
+		6C21585229D81B09006FB7BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21585129D81B09006FB7BA /* AppDelegate.swift */; };
+		6C21585429D81B09006FB7BA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C21585329D81B09006FB7BA /* GameScene.sks */; };
+		6C21585829D81B09006FB7BA /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21585729D81B09006FB7BA /* GameScene.swift */; };
+		6C21585A29D81B09006FB7BA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21585929D81B09006FB7BA /* GameViewController.swift */; };
+		6C21585D29D81B09006FB7BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C21585B29D81B09006FB7BA /* Main.storyboard */; };
+		6C21585F29D81B0B006FB7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C21585E29D81B0B006FB7BA /* Assets.xcassets */; };
+		6C21586229D81B0B006FB7BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C21586029D81B0B006FB7BA /* LaunchScreen.storyboard */; };
+		6C21586929D860EB006FB7BA /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6C21586829D860EB006FB7BA /* level1.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6C21582A29D80567006FB7BA /* Project25_CloudShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project25_CloudShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C21582D29D80567006FB7BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C21582F29D80567006FB7BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6C21583429D80567006FB7BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6C21583629D80568006FB7BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6C21583929D80568006FB7BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6C21583B29D80568006FB7BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C21584129D8062F006FB7BA /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		6C21584E29D81B09006FB7BA /* Project26_RollingBallMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project26_RollingBallMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C21585129D81B09006FB7BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C21585329D81B09006FB7BA /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		6C21585729D81B09006FB7BA /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		6C21585929D81B09006FB7BA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6C21585C29D81B09006FB7BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C21585E29D81B0B006FB7BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C21586129D81B0B006FB7BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C21586829D860EB006FB7BA /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6C21582729D80567006FB7BA /* Frameworks */ = {
+		6C21584B29D81B09006FB7BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +40,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6C21582129D80567006FB7BA = {
+		6C21584529D81B09006FB7BA = {
 			isa = PBXGroup;
 			children = (
-				6C21582C29D80567006FB7BA /* Project25_CloudShare */,
-				6C21582B29D80567006FB7BA /* Products */,
+				6C21585029D81B09006FB7BA /* Project26_RollingBallMaze */,
+				6C21584F29D81B09006FB7BA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6C21582B29D80567006FB7BA /* Products */ = {
+		6C21584F29D81B09006FB7BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6C21582A29D80567006FB7BA /* Project25_CloudShare.app */,
+				6C21584E29D81B09006FB7BA /* Project26_RollingBallMaze.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6C21582C29D80567006FB7BA /* Project25_CloudShare */ = {
+		6C21585029D81B09006FB7BA /* Project26_RollingBallMaze */ = {
 			isa = PBXGroup;
 			children = (
-				6C21582D29D80567006FB7BA /* AppDelegate.swift */,
-				6C21582F29D80567006FB7BA /* SceneDelegate.swift */,
-				6C21583329D80567006FB7BA /* Main.storyboard */,
-				6C21584129D8062F006FB7BA /* MainCollectionViewController.swift */,
-				6C21583629D80568006FB7BA /* Assets.xcassets */,
-				6C21583829D80568006FB7BA /* LaunchScreen.storyboard */,
-				6C21583B29D80568006FB7BA /* Info.plist */,
+				6C21585129D81B09006FB7BA /* AppDelegate.swift */,
+				6C21585329D81B09006FB7BA /* GameScene.sks */,
+				6C21585729D81B09006FB7BA /* GameScene.swift */,
+				6C21585929D81B09006FB7BA /* GameViewController.swift */,
+				6C21585B29D81B09006FB7BA /* Main.storyboard */,
+				6C21585E29D81B0B006FB7BA /* Assets.xcassets */,
+				6C21586029D81B0B006FB7BA /* LaunchScreen.storyboard */,
+				6C21586829D860EB006FB7BA /* level1.txt */,
 			);
-			path = Project25_CloudShare;
+			path = Project26_RollingBallMaze;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6C21582929D80567006FB7BA /* Project25_CloudShare */ = {
+		6C21584D29D81B09006FB7BA /* Project26_RollingBallMaze */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C21583E29D80568006FB7BA /* Build configuration list for PBXNativeTarget "Project25_CloudShare" */;
+			buildConfigurationList = 6C21586529D81B0B006FB7BA /* Build configuration list for PBXNativeTarget "Project26_RollingBallMaze" */;
 			buildPhases = (
-				6C21582629D80567006FB7BA /* Sources */,
-				6C21582729D80567006FB7BA /* Frameworks */,
-				6C21582829D80567006FB7BA /* Resources */,
+				6C21584A29D81B09006FB7BA /* Sources */,
+				6C21584B29D81B09006FB7BA /* Frameworks */,
+				6C21584C29D81B09006FB7BA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Project25_CloudShare;
-			productName = Project25_CloudShare;
-			productReference = 6C21582A29D80567006FB7BA /* Project25_CloudShare.app */;
+			name = Project26_RollingBallMaze;
+			productName = Project26_RollingBallMaze;
+			productReference = 6C21584E29D81B09006FB7BA /* Project26_RollingBallMaze.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6C21582229D80567006FB7BA /* Project object */ = {
+		6C21584629D81B09006FB7BA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					6C21582929D80567006FB7BA = {
+					6C21584D29D81B09006FB7BA = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
-			buildConfigurationList = 6C21582529D80567006FB7BA /* Build configuration list for PBXProject "Project25_CloudShare" */;
+			buildConfigurationList = 6C21584929D81B09006FB7BA /* Build configuration list for PBXProject "Project26_RollingBallMaze" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +114,57 @@
 				en,
 				Base,
 			);
-			mainGroup = 6C21582129D80567006FB7BA;
-			productRefGroup = 6C21582B29D80567006FB7BA /* Products */;
+			mainGroup = 6C21584529D81B09006FB7BA;
+			productRefGroup = 6C21584F29D81B09006FB7BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6C21582929D80567006FB7BA /* Project25_CloudShare */,
+				6C21584D29D81B09006FB7BA /* Project26_RollingBallMaze */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6C21582829D80567006FB7BA /* Resources */ = {
+		6C21584C29D81B09006FB7BA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C21583A29D80568006FB7BA /* LaunchScreen.storyboard in Resources */,
-				6C21583729D80568006FB7BA /* Assets.xcassets in Resources */,
-				6C21583529D80567006FB7BA /* Main.storyboard in Resources */,
+				6C21586929D860EB006FB7BA /* level1.txt in Resources */,
+				6C21585D29D81B09006FB7BA /* Main.storyboard in Resources */,
+				6C21585429D81B09006FB7BA /* GameScene.sks in Resources */,
+				6C21585F29D81B0B006FB7BA /* Assets.xcassets in Resources */,
+				6C21586229D81B0B006FB7BA /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6C21582629D80567006FB7BA /* Sources */ = {
+		6C21584A29D81B09006FB7BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C21582E29D80567006FB7BA /* AppDelegate.swift in Sources */,
-				6C21584229D8062F006FB7BA /* MainCollectionViewController.swift in Sources */,
-				6C21583029D80567006FB7BA /* SceneDelegate.swift in Sources */,
+				6C21585829D81B09006FB7BA /* GameScene.swift in Sources */,
+				6C21585A29D81B09006FB7BA /* GameViewController.swift in Sources */,
+				6C21585229D81B09006FB7BA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6C21583329D80567006FB7BA /* Main.storyboard */ = {
+		6C21585B29D81B09006FB7BA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6C21583429D80567006FB7BA /* Base */,
+				6C21585C29D81B09006FB7BA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		6C21583829D80568006FB7BA /* LaunchScreen.storyboard */ = {
+		6C21586029D81B0B006FB7BA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6C21583929D80568006FB7BA /* Base */,
+				6C21586129D81B0B006FB7BA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +172,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6C21583C29D80568006FB7BA /* Debug */ = {
+		6C21586329D81B0B006FB7BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +232,7 @@
 			};
 			name = Debug;
 		};
-		6C21583D29D80568006FB7BA /* Release */ = {
+		6C21586429D81B0B006FB7BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +286,7 @@
 			};
 			name = Release;
 		};
-		6C21583F29D80568006FB7BA /* Debug */ = {
+		6C21586629D81B0B006FB7BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -289,26 +295,31 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S9R6HFZ747;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Project25_CloudShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rolling Marble Maze";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jobie.Project25-CloudShare";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jobie.Project26-RollingBallMaze";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
-		6C21584029D80568006FB7BA /* Release */ = {
+		6C21586729D81B0B006FB7BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -317,47 +328,52 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S9R6HFZ747;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Project25_CloudShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rolling Marble Maze";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jobie.Project25-CloudShare";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jobie.Project26-RollingBallMaze";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6C21582529D80567006FB7BA /* Build configuration list for PBXProject "Project25_CloudShare" */ = {
+		6C21584929D81B09006FB7BA /* Build configuration list for PBXProject "Project26_RollingBallMaze" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6C21583C29D80568006FB7BA /* Debug */,
-				6C21583D29D80568006FB7BA /* Release */,
+				6C21586329D81B0B006FB7BA /* Debug */,
+				6C21586429D81B0B006FB7BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C21583E29D80568006FB7BA /* Build configuration list for PBXNativeTarget "Project25_CloudShare" */ = {
+		6C21586529D81B0B006FB7BA /* Build configuration list for PBXNativeTarget "Project26_RollingBallMaze" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6C21583F29D80568006FB7BA /* Debug */,
-				6C21584029D80568006FB7BA /* Release */,
+				6C21586629D81B0B006FB7BA /* Debug */,
+				6C21586729D81B0B006FB7BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6C21582229D80567006FB7BA /* Project object */;
+	rootObject = 6C21584629D81B09006FB7BA /* Project object */;
 }

@@ -15,6 +15,10 @@
 		6C21585F29D81B0B006FB7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C21585E29D81B0B006FB7BA /* Assets.xcassets */; };
 		6C21586229D81B0B006FB7BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C21586029D81B0B006FB7BA /* LaunchScreen.storyboard */; };
 		6C21586929D860EB006FB7BA /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6C21586829D860EB006FB7BA /* level1.txt */; };
+		6C21586C29D94758006FB7BA /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6C21586B29D94758006FB7BA /* level2.txt */; };
+		6C21587229D949B4006FB7BA /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21587129D949B4006FB7BA /* GameOver.swift */; };
+		6C21587429D94EED006FB7BA /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C21587329D94EED006FB7BA /* StartScene.swift */; };
+		6C21587629D94F2A006FB7BA /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C21587529D94F2A006FB7BA /* StartScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		6C21585E29D81B0B006FB7BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C21586129D81B0B006FB7BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C21586829D860EB006FB7BA /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		6C21586B29D94758006FB7BA /* level2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
+		6C21587129D949B4006FB7BA /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
+		6C21587329D94EED006FB7BA /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		6C21587529D94F2A006FB7BA /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +68,27 @@
 			isa = PBXGroup;
 			children = (
 				6C21585129D81B09006FB7BA /* AppDelegate.swift */,
+				6C21587529D94F2A006FB7BA /* StartScene.sks */,
+				6C21587329D94EED006FB7BA /* StartScene.swift */,
 				6C21585329D81B09006FB7BA /* GameScene.sks */,
 				6C21585729D81B09006FB7BA /* GameScene.swift */,
+				6C21587129D949B4006FB7BA /* GameOver.swift */,
 				6C21585929D81B09006FB7BA /* GameViewController.swift */,
 				6C21585B29D81B09006FB7BA /* Main.storyboard */,
 				6C21585E29D81B0B006FB7BA /* Assets.xcassets */,
 				6C21586029D81B0B006FB7BA /* LaunchScreen.storyboard */,
-				6C21586829D860EB006FB7BA /* level1.txt */,
+				6C21586A29D94726006FB7BA /* gamelevels */,
 			);
 			path = Project26_RollingBallMaze;
+			sourceTree = "<group>";
+		};
+		6C21586A29D94726006FB7BA /* gamelevels */ = {
+			isa = PBXGroup;
+			children = (
+				6C21586829D860EB006FB7BA /* level1.txt */,
+				6C21586B29D94758006FB7BA /* level2.txt */,
+			);
+			path = gamelevels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,8 +149,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C21587629D94F2A006FB7BA /* StartScene.sks in Resources */,
 				6C21586929D860EB006FB7BA /* level1.txt in Resources */,
 				6C21585D29D81B09006FB7BA /* Main.storyboard in Resources */,
+				6C21586C29D94758006FB7BA /* level2.txt in Resources */,
 				6C21585429D81B09006FB7BA /* GameScene.sks in Resources */,
 				6C21585F29D81B0B006FB7BA /* Assets.xcassets in Resources */,
 				6C21586229D81B0B006FB7BA /* LaunchScreen.storyboard in Resources */,
@@ -147,6 +169,8 @@
 				6C21585829D81B09006FB7BA /* GameScene.swift in Sources */,
 				6C21585A29D81B09006FB7BA /* GameViewController.swift in Sources */,
 				6C21585229D81B09006FB7BA /* AppDelegate.swift in Sources */,
+				6C21587429D94EED006FB7BA /* StartScene.swift in Sources */,
+				6C21587229D949B4006FB7BA /* GameOver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +327,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,6 +361,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

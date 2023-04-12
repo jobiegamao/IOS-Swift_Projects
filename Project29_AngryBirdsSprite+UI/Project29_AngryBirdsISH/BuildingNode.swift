@@ -28,7 +28,7 @@ class BuildingNode: SKSpriteNode {
 		physicsBody = SKPhysicsBody(texture: texture!, size: size)
 		physicsBody?.isDynamic = false
 		physicsBody?.categoryBitMask = CollisionTypes.building.rawValue
-		physicsBody?.contactTestBitMask = CollisionTypes.banana.rawValue
+		physicsBody?.contactTestBitMask = CollisionTypes.throwItem.rawValue
 	}
 	
 	func drawBuilding(size: CGSize) -> UIImage {

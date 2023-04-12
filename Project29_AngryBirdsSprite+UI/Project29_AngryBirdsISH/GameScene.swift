@@ -8,6 +8,7 @@
 import SpriteKit
 import GameplayKit
 
+// category bit masks
 enum CollisionTypes: UInt32 {
 	case throwItem = 1
 	case building = 2
@@ -28,9 +29,22 @@ class GameScene: SKScene {
 	// MARK: - Main
 	override func didMove(to view: SKView) {
 		backgroundColor = #colorLiteral(red: 0.3679216802, green: 0.3132570684, blue: 0.4523524642, alpha: 1) // #colorLiteral(
+		
+		physicsWorld.contactDelegate = self
+		
 		createBuildings()
 		createPlayers()
 		print(screenSize.width, screenSize.height)
+	}
+	
+	override func update(_ currentTime: TimeInterval) {
+		guard throwItem != nil else { return }
+
+		if abs(throwItem.position.y) > screenSize.height {
+			throwItem.removeFromParent()
+			throwItem = nil
+			changePlayer()
+		}
 	}
 	
 	func createBuildings() {
@@ -103,7 +117,9 @@ class GameScene: SKScene {
 		throwItem.name = "throwItem"
 		throwItem.physicsBody = SKPhysicsBody(circleOfRadius: throwItem.size.width / 2)
 		throwItem.physicsBody?.categoryBitMask = CollisionTypes.throwItem.rawValue
+		// what it can be bounced with
 		throwItem.physicsBody?.collisionBitMask = CollisionTypes.building.rawValue | CollisionTypes.player.rawValue
+		// contact/inform whenever it bounced with this nodes
 		throwItem.physicsBody?.contactTestBitMask = CollisionTypes.building.rawValue | CollisionTypes.player.rawValue
 		
 		// for precise at every frame
@@ -133,7 +149,6 @@ class GameScene: SKScene {
 			
 			
 			case 2:
-				// 7
 				throwItem.position = CGPoint(x: player2.position.x + 30, y: player2.position.y + 40)
 				throwItem.physicsBody?.angularVelocity = 20
 
@@ -143,6 +158,7 @@ class GameScene: SKScene {
 				let sequence = SKAction.sequence([raiseArm, pause, lowerArm])
 				player2.run(sequence)
 
+				// give a push to that direction
 				let impulse = CGVector(dx: cos(radians) * -speed, dy: sin(radians) * speed)
 				throwItem.physicsBody?.applyImpulse(impulse)
 				
@@ -154,4 +170,107 @@ class GameScene: SKScene {
 		
 	}
 	
+	
+	
+	
+	func throwItemHits(building: SKNode, atPoint contactPoint: CGPoint) {
+		guard let building = building as? BuildingNode else { return }
+		
+		// contactPoint is a cgpoint in respect to the whole GameScene
+		// we need the cgpoint in respect to the bldg, so use convert()
+		let buildingLocation = convert(contactPoint, to: building)
+		building.hit(at: buildingLocation)
+
+		if let explosion = SKEmitterNode(fileNamed: "hitBuilding") {
+			explosion.position = contactPoint
+			addChild(explosion)
+		}
+
+		// delete the throwItem before it can touch another bldg
+		throwItem.name = ""
+		throwItem.removeFromParent()
+		throwItem = nil
+		
+
+		changePlayer()
+	}
+	
+	
+	
+	func destroy(player: SKSpriteNode) {
+		
+		// show explosion, if there is
+		if let explosion = SKEmitterNode(fileNamed: "hitPlayer"){
+			explosion.position = player.position
+			addChild(explosion)
+		}
+		
+		// delete from gamescene
+		player.removeFromParent()
+		throwItem.removeFromParent()
+		
+		// New GameScene
+		// transition to a new gamescene
+		DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+			let newGameScene = GameScene(size: self.size)
+			newGameScene.viewController = self.viewController
+			self.viewController.currentGameScene = newGameScene
+
+			self.changePlayer()
+			newGameScene.currentPlayer = self.currentPlayer
+
+			let transition = SKTransition.doorway(withDuration: 1.5)
+			self.view?.presentScene(newGameScene, transition: transition)
+			
+		}
+	}
+	
+	func changePlayer() {
+		currentPlayer = currentPlayer == 1 ? 2 : 1
+		viewController.activatePlayer(player: currentPlayer)
+	}
+	
+	
+}
+
+
+extension GameScene: SKPhysicsContactDelegate {
+	
+	// called when 2 nodes' physicsBody contact
+	func didBegin(_ contact: SKPhysicsContact) {
+		let firstBody: SKPhysicsBody
+		let secondBody: SKPhysicsBody
+
+		// eliminate a duplicate contact patterns,
+		// such as player contact bldg and bldg contact player
+		// if both exists, didBegin might be called one after another
+		// one way to do this is based it on the categorBitMask
+		if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask {
+			firstBody = contact.bodyA
+			secondBody = contact.bodyB
+		} else {
+			firstBody = contact.bodyB
+			secondBody = contact.bodyA
+		}
+
+		// guard-let as this cannot be nil
+		guard let firstNode = firstBody.node,
+			  let secondNode = secondBody.node
+		else { return }
+		
+		
+		switch (firstNode.name, secondNode.name){
+			case ("throwItem", "building"):
+				throwItemHits(building: secondNode, atPoint: contact.contactPoint)
+				break
+			case ("throwItem", "player1"):
+				destroy(player: player1)
+				break
+			case ("throwItem", "player2"):
+				destroy(player: player2)
+				break
+			default:
+				fatalError("No case for this nodes contact")
+		}
+	}
 }

@@ -71,11 +71,11 @@ class GameViewController: UIViewController {
 	
 	
 	@IBAction func angleChanged(_ sender: Any) {
-		angleLabel.text = "Angle: \(angleSlider.value)°"
+		angleLabel.text = "Angle: \(Int(angleSlider.value))°"
 	}
 	
 	@IBAction func velocityChanged(_ sender: Any) {
-		velocityLabel.text = "Velocity: \(velocitySlider.value)"
+		velocityLabel.text = "Velocity: \(Int(velocitySlider.value))"
 	}
 	
 	

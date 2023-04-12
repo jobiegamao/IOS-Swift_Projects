@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L47-Sn-dJ5">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project28_SecurityFaceID" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11i-Rq-otd">
+                                <rect key="frame" x="136.33333333333334" y="408.66666666666669" width="120.66666666666666" height="44"/>
+                                <accessibility key="accessibilityConfiguration" label="Authenticate Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Va1-0r-a4y"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="10" height="10"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Authenticate"/>
+                                <connections>
+                                    <action selector="didTapAuthBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqB-B4-zdT"/>
+                                </connections>
+                            </button>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="86P-EM-LAK">
+                                <rect key="frame" x="16" y="103" width="361" height="691"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="IUH-WM-e8v"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="86P-EM-LAK" secondAttribute="bottom" constant="24" id="8wT-Ch-EcF"/>
+                            <constraint firstItem="11i-Rq-otd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RRX-KB-TMK"/>
+                            <constraint firstItem="86P-EM-LAK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="l4E-19-XWg"/>
+                            <constraint firstItem="11i-Rq-otd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="4.6666666666666288" id="roU-xL-vMo"/>
+                            <constraint firstItem="86P-EM-LAK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vdG-RJ-5vH"/>
+                            <constraint firstItem="86P-EM-LAK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="w4z-cK-whd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="57t-lV-4xd">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="FYy-bh-WxW">
+                            <button key="customView" hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1bg-MY-oUN">
+                                <rect key="frame" x="16" y="5" width="118" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Passkey" image="key.horizontal.fill" catalog="system">
+                                    <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapPasskeyBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OqN-Pr-gRs"/>
+                                </connections>
+                            </button>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="lock.open" catalog="system" style="plain" id="aue-j3-KJ4">
+                            <button key="customView" hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" toolTip="Lock it?" lineBreakMode="middleTruncation" id="06U-0b-ECb">
+                                <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="lock.open" catalog="system">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapLockBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ic9-vO-UVY"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btn" destination="11i-Rq-otd" id="X9v-Qd-pgc"/>
+                        <outlet property="lockBtn" destination="06U-0b-ECb" id="Kge-OS-gEm"/>
+                        <outlet property="passkeyBtn" destination="1bg-MY-oUN" id="c5t-Kr-Tgt"/>
+                        <outlet property="secretTextView" destination="86P-EM-LAK" id="XBH-mP-85b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QrR-g5-a67">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L47-Sn-dJ5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2am-gU-xsU">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6kl-mF-RZD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCp-ec-EVj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="key.horizontal.fill" catalog="system" width="128" height="65"/>
+        <image name="lock.open" catalog="system" width="128" height="110"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

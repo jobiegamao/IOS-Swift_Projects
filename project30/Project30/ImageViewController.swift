@@ -9,7 +9,7 @@
 import UIKit
 
 class ImageViewController: UIViewController {
-	var owner: SelectionViewController!
+	weak var owner: SelectionViewController!
 	var image: String!
 	var animTimer: Timer!
 
@@ -35,12 +35,12 @@ class ImageViewController: UIViewController {
 		imageView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
 
 		// schedule an animation that does something vaguely interesting
-		animTimer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { timer in
+		animTimer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { [weak self] timer in
 			// do something exciting with our image
-			self.imageView.transform = CGAffineTransform.identity
+			self?.imageView.transform = CGAffineTransform.identity
 
 			UIView.animate(withDuration: 3) {
-				self.imageView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+				self?.imageView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
 			}
 		}
 	}
@@ -72,6 +72,11 @@ class ImageViewController: UIViewController {
 			self.imageView.alpha = 1
 		}
 	}
+	
+	override func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+		animTimer.invalidate()
+	}
 
 	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 		let defaults = UserDefaults.standard
@@ -81,6 +86,13 @@ class ImageViewController: UIViewController {
 		defaults.set(currentVal, forKey:image)
 
 		// tell the parent view controller that it should refresh its table counters when we go back
-		owner.dirty = true
+		owner.reloadSelectionVC = true
 	}
 }
+
+
+/*
+ Problems
+ + app crash when you go the detail view controller enough times
+ + animTimer is never destroyed
+ */
